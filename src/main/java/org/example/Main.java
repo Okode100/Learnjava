@@ -7,6 +7,13 @@ import java.util.Arrays;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+    private static double rent(int mRent, int property){
+        int months = 12;
+        int annualRent = mRent * months;
+       double rentYield = (double) annualRent / property * 100;
+        return rentYield;
+
+    };
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
@@ -35,6 +42,7 @@ public class Main {
 
          */
         //Topic: Learn arrays
+        /*
         int[] numbers = new int[5];
         Arrays.fill(numbers,6);
        // System.out.println(Arrays.toString(numbers));
@@ -54,5 +62,20 @@ public class Main {
         for(int i = 0; i < classMate.length; i++){
             System.out.println(classMate[i]);
         }
+
+         */
+      double rentYield = rent(1200, 3300000);
+        System.out.println("The Annual rental yield is:"+ rentYield);
+
     }
+     //Tips: This is what you should consider when creating methods.
+    /*
+    - Access Modifier
+    - Optional static
+    - Return type
+    - Name
+    - Optional Parameters
+    - Method Body
+    - Optional return value
+     */
 }
