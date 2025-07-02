@@ -34,14 +34,25 @@ public class Main {
         );
 
          */
+        //Topic: Learn arrays
         int[] numbers = new int[5];
         Arrays.fill(numbers,6);
-        System.out.println(Arrays.toString(numbers));
-        System.out.println(numbers.length);
+       // System.out.println(Arrays.toString(numbers));
+       // System.out.println(numbers.length);
         String[] words = new String[2];
         //words[0] = "James";
         //words[1] = "Noe";
         Arrays.fill(words,"Hellen");
-        System.out.println(Arrays.toString(words));
+       // System.out.println(Arrays.toString(words));
+        String[] classMate = {
+                "Moses",
+                "Bruce",
+                "Mukami",
+                "Allan",
+                "Purity"
+        };
+        for(int i = 0; i < classMate.length; i++){
+            System.out.println(classMate[i]);
+        }
     }
 }
