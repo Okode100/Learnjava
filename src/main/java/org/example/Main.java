@@ -21,6 +21,8 @@ public class Main {
         System.out.println(10 == 10);
         System.out.println(10 != 10);
          */
+
+        /*
         Point pointA = new Point(10, 20);
         System.out.println("This is: "+ pointA);
         int[] number = new int[3];
@@ -30,5 +32,16 @@ public class Main {
         System.out.println(
                 Arrays.toString(number)
         );
+
+         */
+        int[] numbers = new int[5];
+        Arrays.fill(numbers,6);
+        System.out.println(Arrays.toString(numbers));
+        System.out.println(numbers.length);
+        String[] words = new String[2];
+        //words[0] = "James";
+        //words[1] = "Noe";
+        Arrays.fill(words,"Hellen");
+        System.out.println(Arrays.toString(words));
     }
 }
